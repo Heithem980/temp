@@ -27,7 +27,7 @@ public class colorActionListener implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		changeColor = !changeColor;
 		
-		// Changes from color to grayscale or vice versa.
+		// (onclick) Changes from color to grayscale or vice versa.
 		
 		if(changeColor) {
 		 int width = image.getWidth();
