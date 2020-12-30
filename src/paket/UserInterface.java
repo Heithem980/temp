@@ -46,10 +46,12 @@ public class UserInterface {
 			JButton btnZoom = new JButton("Zoom in/out");
 			JButton btnColor = new JButton("Color");
 			JButton btnHide = new JButton("Hide");
+			JButton btnNegativeColor = new JButton("Negative Color");
 			
 			btnPanel.add(btnZoom);
 			btnPanel.add(btnColor);
 			btnPanel.add(btnHide);
+			btnPanel.add(btnNegativeColor);
 			
 			contentPane.add(btnPanel, BorderLayout.SOUTH);
 			
@@ -57,6 +59,7 @@ public class UserInterface {
 			btnZoom.addActionListener(new zoomActionListener(contentPane, image));
 			btnColor.addActionListener(new colorActionListener(contentPane, image));
 			btnHide.addActionListener(new hideActionListener(contentPane));
+			btnNegativeColor.addActionListener(new negativeActionListener(contentPane, image));
 		} catch (IOException e) {
 			
 			e.printStackTrace();
